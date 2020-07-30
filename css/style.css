@@ -504,6 +504,7 @@ button:focus {
 .dowloadStors {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 30px 0 0 0;
 }
 
@@ -522,7 +523,7 @@ button:focus {
 }
 
 .downloadStore .data {
-    padding: 0 15px;
+    padding-left: 15px;
 }
 
 .downloadStore h5 {
@@ -567,7 +568,8 @@ button:focus {
     position: absolute;
     top: 0;
     border-radius: 50%;
-    -webkit-animation: circle1 10s infinite linear;
+    -webkit-animation: circle 10s infinite linear;
+    animation: circle 10s infinite linear;
 }
 
 .outerShape .circle {
@@ -626,7 +628,7 @@ button:focus {
     border-radius: 50%;
 }
 
-@-webkit-keyframes circle1 {
+@keyframes circle {
     from {
       -webkit-transform: rotateZ(0deg)
     }
@@ -634,20 +636,123 @@ button:focus {
       -webkit-transform: rotateZ(360deg)
     }
 }
-@-webkit-keyframes ccircle1 {
+
+@-webkit-keyframes circle {
     from {
-      -webkit-transform: rotateZ(0deg)
+        -webkit-transform: rotateZ(0deg)
     }
     to {
-      -webkit-transform: rotateZ(-360deg)
+        -webkit-transform: rotateZ(360deg)
     }
 }
 
 
 /*==========================||---------------------------||========================*/
-/*==========================||           Services        ||========================*/
+/*==========================||           Features        ||========================*/
 /*==========================||---------------------------||========================*/
 
+.features {
+    position: relative;
+}
+
+.features::before {
+    content: "";
+    position: absolute;
+    top: calc( 50% - 100px );
+    left: 0;
+    width: 150px;
+    height: 200px;
+    display: block;
+    background: url('../images/dots-grey.png') no-repeat;
+    background-size: cover;
+}
+
+.featuresBlock {
+    margin: 30px 0 0 0;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.feature .icon {
+    width: 40px;
+    height: 40px;
+    background: var(--secondColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.feature .data {
+    width: calc( 100% - 50px );
+}
+
+.feature h3 {
+    font: 900 14px/26px Roboto, Tajawal;
+    margin: 0;
+}
+
+.feature h6 {
+    font: 400 13px/20px Roboto, Tajawal;
+    color: var(--text);
+}
+
+.featuresScreens {
+    display: flex;
+    position: relative;
+    margin-top: -40px;
+    padding: 40px 50px 0 120px;
+}
+
+.featuresShapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.featuresScreen {
+    position: relative;
+    z-index: 1;
+}
+
+.featuresScreen1 {
+    transform: rotate(-41deg);
+    transform-origin: right;
+    margin-top: -87px;
+    margin-right: -69px;
+}
+
+.shape2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 15%;
+    top: 57%;
+}
+
+.shape1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -15px;
+    top: calc( 50% - 100px );
+}
+
+.shape3 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 28%;
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||           Events         ||========================*/
