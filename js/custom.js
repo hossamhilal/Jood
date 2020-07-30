@@ -25,49 +25,27 @@
         $('.navMenu').removeClass('show');  
         $('body').removeClass('stopScroll');  
     });
-
-    //  Open DropDown
-    $('.dropToggle').on('click', function(e){
-        e.preventDefault();
-        e.stopPropagation();
-        if($(this).next('.dropDown').hasClass('open')){
-            $('.dropDown').removeClass('open');
-        } else {
-            $('.dropDown').removeClass('open');
-            $(this).next('.dropDown').toggleClass('open');
-        } 
-    });
-
-    //  Close DropDown
-    $(document).on('click', function(){
-        $('.dropDown').removeClass('open');
-    });
-
     
     // Header OWL 
-    let owlHeader = $('.owlHeader');
-    owlHeader.owlCarousel({
-        margin: 0,
+    $('.owlSponsors').owlCarousel({
+        margin: 20,
         autoplay: true,
         loop: true,
-        nav: true,
-        dots: true,
+        nav: false,
+        dots: false,
         autoplaySpeed : 5000,
         autoplayTimeout : 5000,
         smartSpeed: 5000 ,
         navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
         responsive: {
             0: {
-                items: 1,
-                dotsEach: 1
+                items: 2
             },
             600: {
-                items: 1,
-                dotsEach: 1
+                items: 3
             },
             1000: {
-                items: 1,
-                dotsEach: 1
+                items: 4
             }
         }
     });
