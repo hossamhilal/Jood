@@ -26,7 +26,7 @@
         $('body').removeClass('stopScroll');  
     });
     
-    // Header OWL 
+    // Sponsors OWL 
     $('.owlSponsors').owlCarousel({
         margin: 20,
         autoplay: true,
@@ -49,54 +49,18 @@
             }
         }
     });
-    $('.owlHeader .owl-dot').each(function () {
-        $(this).children('span').text('0' + ($(this).index() + 1));
-    });   
-    owlHeader.on('mousewheel', '.owl-stage', function (e) {
-        if (e.deltaY > 0) {
-            owlHeader.trigger('next.owl');
-        } else {
-            owlHeader.trigger('prev.owl');
-        }
-        e.preventDefault();
-    });
 
-    // Testimonials OWL 
-    $('.owlTestimonials').owlCarousel({
-        margin: 20,
-        autoplay: true,
-        loop: false,
-        nav: true,
-        dots: false,
-        center : false ,
-        autoplaySpeed : 5000,
-        autoplayTimeout : 5000,
-        smartSpeed: 5000 ,
-        navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 2
-            }
-        }
-    });
-
-    // Partners OWL 
-    $('.owlPartners').owlCarousel({
-        margin: 20,
+    // Screens OWL 
+    $('.owlScreens').owlCarousel({
+        margin: 30,
         autoplay: true,
         loop: true,
         nav: false,
         dots: false,
-        center : false ,
-        autoplaySpeed : 5000,
-        autoplayTimeout : 5000,
-        smartSpeed: 5000 ,
+        center : true ,
+        autoplaySpeed : 4000,
+        autoplayTimeout : 4000,
+        smartSpeed: 4000 ,
         navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
         responsive: {
             0: {
@@ -106,63 +70,36 @@
                 items: 3
             },
             1000: {
-                items: 4
+                items: 5
             }
         }
     });
 
-    // Clients OWL 
-    $('.owlClients').owlCarousel({
-        margin: 20,
-        autoplay: true,
-        loop: true,
-        nav: true,
-        dots: false,
-        center : false ,
-        autoplaySpeed : 5000,
-        autoplayTimeout : 5000,
-        smartSpeed: 5000 ,
-        navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 4
-            }
+    // COUNTER
+    var a = 0;
+    function count () {
+        $('.countNum').each(function () {
+            let countNum = $(this).text();
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+        a = 1;
+    }
+
+    $(window).scroll(function() {
+        var oTop = $('.counts').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+            count();
         }
     });
 
-    // Wellness Block
-    $('.openDetails').on('click' , function(){
-        $(this).parents('.hover').addClass('open');
-    });
-
-    $('.closeDetails').on('click' , function(){
-        $(this).parents('.hover').removeClass('open');
-    });
-
-
-    // Upload File 
-    $('.uploadFile').on('change', function(e) {
-        let fileName = e.target.value.split( '\\' ).pop();
-        console.log(fileName);
-        let files = $(this).parent('.uploadBox').prev('.uploadedFiles');
-        files.append(
-            '<div class="file">' +
-                '<h3 class="fileName">' + fileName  + '</h3>' +
-                '<span class="deleteFile"> <i class="icofont-ui-delete"></i> </span>' +
-            '</div>'
-        );               
-    });
-
-    // Delete File
-    $(document).on('click','.deleteFile' , function(){
-        $(this).parent('.file').remove();
-    });
 
     // iniat WOW Js
     new WOW().init();
