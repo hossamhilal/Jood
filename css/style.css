@@ -13,7 +13,7 @@
     --mainColor: #FF5399;
     --mainColorDark: #F9096A;
     --secondColor: rgba(255, 83, 153, .15);
-    --orange:#FFBB00;
+    --orange: #FFBB00;
     --white: #fff;
     --textDark: #333333;
     --textMedium: #6B6B6B;
@@ -446,7 +446,7 @@ button:focus {
     z-index: 1;
 }
 
-@media screen and  (max-width:767px) {
+@media screen and (max-width:767px) {
     .header {
         padding: 20px 0;
     }
@@ -454,14 +454,14 @@ button:focus {
     .header .getApp {
         display: none;
     }
-    
+
     .header .language {
         width: 25px;
         height: 25px;
         border-radius: 5px;
         margin: 0 15px;
     }
-    
+
     .menuBtn {
         width: 20px;
         height: 16px;
@@ -472,7 +472,7 @@ button:focus {
         margin: 0;
         cursor: pointer;
     }
-    
+
     .menuBtn span {
         width: 100%;
         background: var(--textDark);
@@ -481,11 +481,11 @@ button:focus {
         border-radius: 5px;
         transition: all .4s ease-in-out;
     }
-    
+
     .menuBtn span:nth-child(2) {
         width: 75%;
     }
-    
+
     .menuBtn:hover span {
         width: 100%;
         background: var(--mainColor);
@@ -514,13 +514,13 @@ button:focus {
         height: 80px;
         width: 270px;
     }
-    
+
     .navMenu a {
         margin: 10px 0;
         display: block;
         padding: 10px 20px;
     }
-    
+
     .navMenu a::after {
         top: 18px;
         left: -11px;
@@ -533,7 +533,7 @@ button:focus {
         bottom: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(0,0,0,.7);
+        background: rgba(0, 0, 0, .7);
         opacity: 0;
         visibility: hidden;
         transition: all .5s ease-in-out;
@@ -551,31 +551,31 @@ button:focus {
         padding: 0;
         margin-top: 40px;
     }
-    
+
     .headerData h1 {
         font: Bold 25px/35px Poppins;
     }
-    
+
     .headerData p {
         font: normal 13px/30px Poppins;
         letter-spacing: 0;
     }
-    
+
     .headerData .flexGroup {
         margin: 20px 0 0 0;
     }
-    
+
     .fullBtn {
         padding: 0 10px;
         font-size: 12px;
         border-radius: 8px;
     }
-    
+
     .header .screens {
         margin-top: 80px;
         padding: 0 20px;
     }
-    
+
     .header .screen2 {
         margin-top: -30px;
     }
@@ -586,7 +586,7 @@ button:focus {
         margin: 0 7px;
         font-size: 13px;
     }
-    
+
     .header .getApp {
         margin: 0 10px;
         padding: 0 10px;
@@ -594,7 +594,7 @@ button:focus {
         height: 30px;
         border-radius: 5px;
     }
-    
+
     .header .language {
         height: 30px;
         border-radius: 5px;
@@ -746,7 +746,7 @@ button:focus {
     background: var(--mainColor);
     top: 30%;
     right: 15px;
-    
+
 }
 
 .outerShape .circle2 {
@@ -792,10 +792,11 @@ button:focus {
 
 @keyframes circle {
     from {
-      -webkit-transform: rotateZ(0deg)
+        -webkit-transform: rotateZ(0deg)
     }
+
     to {
-      -webkit-transform: rotateZ(360deg)
+        -webkit-transform: rotateZ(360deg)
     }
 }
 
@@ -803,6 +804,7 @@ button:focus {
     from {
         -webkit-transform: rotateZ(0deg)
     }
+
     to {
         -webkit-transform: rotateZ(360deg)
     }
@@ -817,19 +819,19 @@ button:focus {
     .aboutShape {
         padding: 0;
     }
-    
+
     .secPadding {
         padding: 30px 0px;
     }
-    
+
     .outerShape .circle1 {
         right: 5px;
     }
-    
+
     .outerShape .circle2 {
         left: 5px;
     }
-    
+
     .outerShape .circle::after {
         width: 30px;
         height: 30px;
@@ -840,37 +842,37 @@ button:focus {
     .aboutus .aboutData {
         padding-top: 30px;
     }
-    
+
     .secInfo span {
         font: 400 13px/19px Roboto, Tajawal;
         padding: 3px 12px;
     }
-    
+
     .secInfo h2 {
         font: 900 20px/30px Roboto, Tajawal;
     }
-    
+
     .secInfo p {
         font: 400 13px/23px Roboto, Tajawal;
     }
-    
+
     .dowloadStors {
         justify-content: space-between;
     }
-    
+
     .downloadStore {
         padding: 5px 15px;
         height: auto;
     }
-    
+
     .downloadStore:last-of-type {
         margin: 0;
     }
-    
+
     .downloadStore h3 {
         font: Bold 13px/18px Roboto, Tajawal;
     }
-    
+
     .downloadStore img {
         width: 20px;
     }
@@ -899,7 +901,7 @@ button:focus {
 .features::before {
     content: "";
     position: absolute;
-    top: calc( 50% - 140px );
+    top: calc(50% - 140px);
     left: 0;
     width: 150px;
     height: 280px;
@@ -935,7 +937,7 @@ button:focus {
 }
 
 .feature .data {
-    width: calc( 100% - 50px );
+    width: calc(100% - 50px);
 }
 
 .feature h3 {
@@ -988,7 +990,7 @@ button:focus {
     height: 200px;
     position: absolute;
     right: -15px;
-    top: calc( 50% - 100px );
+    top: calc(50% - 100px);
 }
 
 .shape3 {
@@ -1003,30 +1005,30 @@ button:focus {
     .featuresScreens {
         padding: 70px 20px 0 58px;
     }
-    
+
     .featuresScreen1 {
         transform: rotate(-29deg);
         margin-top: -48px;
         margin-right: -75px;
     }
-    
+
     .shape1 {
         width: 80px;
         height: 80px;
         right: 0;
-        top: calc( 50% - 40px );
+        top: calc(50% - 40px);
     }
-    
+
     .shape2 {
         width: 70px;
         height: 70px;
     }
-    
+
     .shape3 {
         width: 102px;
         height: 112px;
     }
-    
+
     .shape3 img {
         height: 100%;
     }
@@ -1034,7 +1036,7 @@ button:focus {
     .features::before {
         display: none;
     }
-    
+
     .feature {
         padding-bottom: 5px;
     }
@@ -1042,7 +1044,7 @@ button:focus {
     .feature h3 {
         font: 900 13px/21px Roboto, Tajawal;
     }
-    
+
     .feature h6 {
         font: 400 12px/20px Roboto, Tajawal;
     }
@@ -1059,7 +1061,7 @@ button:focus {
 
     .features::before {
         display: block;
-        top: calc( 50% - 80px );
+        top: calc(50% - 80px);
         width: 120px;
         height: 160px;
     }
@@ -1070,7 +1072,7 @@ button:focus {
     }
 
     .feature .data {
-        width: calc( 100% - 37px );
+        width: calc(100% - 37px);
     }
 }
 
@@ -1120,7 +1122,7 @@ button:focus {
     .secHeader h2 {
         font: 900 25px/45px Roboto, Tajawal;
     }
-    
+
     .secHeader p {
         font: 400 13px/24px Roboto, Tajawal;
     }
@@ -1166,12 +1168,12 @@ button:focus {
 }
 
 .downloadScreen {
-    transform: scale(1 , 1.3);
+    transform: scale(1, 1.3);
     margin-top: 50px;
 }
 
 .downloadScreen.downloadScreen2 {
-    transform: scale(1.7 , 1.5);
+    transform: scale(1.7, 1.5);
     z-index: 1;
     margin-top: 40px;
 }
@@ -1180,15 +1182,15 @@ button:focus {
     .downloadWrapper {
         padding: 30px 0 0 0;
     }
-    
+
     .downloadWrapper h2 {
         font: Bold 23px/30px Roboto, Tajawal;
     }
-    
+
     .downloadWrapper p {
         font: 300 13px/23px Roboto, Tajawal;
     }
-    
+
     .downloadWrapper .downloadStore {
         padding: 10px;
     }
@@ -1228,16 +1230,16 @@ button:focus {
     .countsBlocks {
         padding: 0;
     }
-    
+
     .count h4 {
         font: Bold 20px/25px Roboto, Tajawal;
         margin: 0;
     }
-    
+
     .count i {
         font-size: 10px;
     }
-    
+
     .count h3 {
         font: 500 15px/30px Roboto, Tajawal;
     }
@@ -1277,7 +1279,7 @@ button:focus {
 .social a {
     width: 32px;
     height: 32px;
-    background: rgba(255,255,255,.15);
+    background: rgba(255, 255, 255, .15);
     color: inherit;
     display: inline-flex;
     align-items: center;
@@ -1317,35 +1319,35 @@ button:focus {
     .footer {
         padding: 20px 0;
     }
-    
+
     .footer .logo {
         max-width: 100px;
         margin: auto;
     }
-    
+
     .footerMenu {
         padding: 10px 0;
     }
-    
+
     .footerMenu a {
         font-size: 13px;
         margin: 0 4px;
     }
-    
+
     .social a {
         width: 25px;
         height: 25px;
         font-size: 13px;
     }
-    
+
     .footer p {
         font-size: 13px;
         margin: 10px 0 0 0;
     }
-    
+
     .footer p a {
         font-size: 13px;
-    }    
+    }
 }
 
 /*==========================||---------------------------||========================*/
@@ -1419,79 +1421,44 @@ button:focus {
 
 
 /*==========================||---------------------------||========================*/
-/*==========================||          Subscribe        ||========================*/
-/*==========================||---------------------------||========================*/
-
-
-
-/*==========================||---------------------------||========================*/
-/*==========================||           Clients         ||========================*/
-/*==========================||---------------------------||========================*/
-
-
-
-/*==========================||---------------------------||========================*/
-/*==========================||            FOOTER         ||========================*/
-/*==========================||---------------------------||========================*/
-
-
-
-/*==========================||---------------------------||========================*/
-/*==========================||        Internal Heade     ||========================*/
-/*==========================||---------------------------||========================*/
-
-
-
-
-/*==========================||---------------------------||========================*/
-/*==========================||          About Page       ||========================*/
-/*==========================||---------------------------||========================*/
-
-
-
-/*==========================||---------------------------||========================*/
-/*==========================||         Events Page       ||========================*/
-/*==========================||---------------------------||========================*/
-
-
-
-
-/*==========================||---------------------------||========================*/
-/*==========================||       Corporate Page      ||========================*/
-/*==========================||---------------------------||========================*/
-
-
-
-/*==========================||---------------------------||========================*/
-/*==========================||       Wellness Ideas      ||========================*/
-/*==========================||---------------------------||========================*/
-
-
-
-/*==========================||---------------------------||========================*/
-/*==========================||          Careers          ||========================*/
-/*==========================||---------------------------||========================*/
-
-
-
-/*==========================||---------------------------||========================*/
-/*==========================||          Volunteer        ||========================*/
-/*==========================||---------------------------||========================*/
-
-
-/*==========================||---------------------------||========================*/
-/*==========================||        Sponsorships       ||========================*/
-/*==========================||---------------------------||========================*/
-
-
-
-/*==========================||---------------------------||========================*/
-/*==========================||            AR             ||========================*/
-/*==========================||---------------------------||========================*/
-
-
-
-
-/*==========================||---------------------------||========================*/
 /*==========================||            Loader        ||========================*/
 /*==========================||---------------------------||========================*/
+
+.loader {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--mainColor);
+    z-index: 999;
+    position: relative;
+}
+
+.loading {
+    display: flex;
+    color: var(--white);
+    font-size: 8em;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+
+.loading span {
+    text-shadow: 0 1px #bbb, 0 2px #bbb, 0 3px #bbb, 0 4px #bbb, 0 5px #bbb, 0 6px transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(20px);
+    animation: bounce 0.3s ease infinite alternate;
+}
+
+@keyframes bounce {
+    to {
+        text-shadow: 0 1px #bbb, 0 2px #bbb, 0 3px #bbb, 0 4px #bbb, 0 5px #bbb, 0 6px #bbb, 0 7px #bbb, 0 8px #bbb, 0 9px #bbb, 0 50px 25px rgba(0, 0, 0, 0.2);
+        transform: translateY(-20px);
+    }
+}
+
+@media screen and (max-width:575px) {
+    .loading {
+        font-size: 50px;
+    }
+}

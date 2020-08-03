@@ -2,13 +2,29 @@
 (function($) {
     "use strict";
 
-    // $(window).on('load', function(){
-    //     $('body').addClass('stopScroll');
-    //     $('.loader').fadeOut(500, function () {
-    //         $(this).remove();
-    //         $('body').removeClass('stopScroll');
-    //     }); 
-    // });
+    // Loader 
+    $(window).on('load', function(){
+        $('body').addClass('stopScroll');
+        $('.loader').fadeOut(500, function () {
+            $(this).remove();
+            $('body').removeClass('stopScroll');
+        }); 
+    });
+
+    // Smooth Scroll
+    $(document).on('click', '.navMenu a' , function (e) {
+        e.preventDefault(); 
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 2000);
+    });
+    $(document).on('click', '.footerMenu a', function (e) {
+        e.preventDefault(); 
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 2000);
+    });
+
 
     // OPEN SIDE  MENU 
     $('.menuBtn').on('click', function(){
@@ -99,6 +115,19 @@
             count();
         }
     });
+
+
+    // Loading 
+    let loading = document.querySelector(".loading");
+    let letters = loading.textContent.split("");
+    loading.textContent = "";
+    letters.forEach((letter, i) => {
+        let span = document.createElement("span");
+        span.textContent = letter;
+        span.style.animationDelay = `${i / 10}s`;
+        loading.append(span);
+    });
+
 
 
     // iniat WOW Js
