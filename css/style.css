@@ -168,6 +168,7 @@ body {
 
 .secPadding {
     padding: 80px 0;
+    overflow: hidden;
 }
 
 .greyBg {
@@ -299,6 +300,7 @@ button:focus {
 .header {
     padding: 40px 0;
     font: 500 14px/24px Roboto, Tajawal;
+    overflow: hidden;
 }
 
 .headerNav {
@@ -311,6 +313,7 @@ button:focus {
     color: var(--textDark);
     margin: 0 20px;
     position: relative;
+    display: inline-block;
     transition: all .4s ease-in-out;
 }
 
@@ -334,6 +337,10 @@ button:focus {
 .navMenu a:hover::after,
 .navMenu .active::after {
     width: 25px;
+}
+
+.navMenu svg {
+    display: none;
 }
 
 .flexGroup {
@@ -437,6 +444,162 @@ button:focus {
 
 .header .screen1 {
     z-index: 1;
+}
+
+@media screen and  (max-width:767px) {
+    .header {
+        padding: 20px 0;
+    }
+
+    .header .getApp {
+        display: none;
+    }
+    
+    .header .language {
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        margin: 0 15px;
+    }
+    
+    .menuBtn {
+        width: 20px;
+        height: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 0;
+        cursor: pointer;
+    }
+    
+    .menuBtn span {
+        width: 100%;
+        background: var(--textDark);
+        height: 2px;
+        display: block;
+        border-radius: 5px;
+        transition: all .4s ease-in-out;
+    }
+    
+    .menuBtn span:nth-child(2) {
+        width: 75%;
+    }
+    
+    .menuBtn:hover span {
+        width: 100%;
+        background: var(--mainColor);
+    }
+
+    .navMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 270px;
+        background: var(--white);
+        transition: all .5s ease-in-out;
+        transform: translateX(-100%);
+        z-index: 99;
+    }
+
+    .navMenu.show {
+        transform: translateX(0);
+    }
+
+    .navMenu svg {
+        display: block;
+        fill: var(--mainColor);
+        stroke: none;
+        height: 80px;
+        width: 270px;
+    }
+    
+    .navMenu a {
+        margin: 10px 0;
+        display: block;
+        padding: 10px 20px;
+    }
+    
+    .navMenu a::after {
+        top: 18px;
+        left: -11px;
+        transform: rotate(270deg);
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,.7);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .5s ease-in-out;
+        z-index: 98;
+    }
+
+    .overlay.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .headerData {
+        padding: 0;
+        margin-top: 40px;
+    }
+    
+    .headerData h1 {
+        font: Bold 25px/35px Poppins;
+    }
+    
+    .headerData p {
+        font: normal 13px/30px Poppins;
+        letter-spacing: 0;
+    }
+    
+    .headerData .flexGroup {
+        margin: 20px 0 0 0;
+    }
+    
+    .fullBtn {
+        padding: 0 10px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+    
+    .header .screens {
+        margin-top: 80px;
+        padding: 0 20px;
+    }
+    
+    .header .screen2 {
+        margin-top: -30px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .navMenu a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+    
+    .header .getApp {
+        margin: 0 10px;
+        padding: 0 10px;
+        min-width: fit-content;
+        height: 30px;
+        border-radius: 5px;
+    }
+    
+    .header .language {
+        height: 30px;
+        border-radius: 5px;
+        width: 30px;
+    }
 }
 
 @media (min-width:1200px) {
@@ -646,6 +809,85 @@ button:focus {
 }
 
 
+@media screen and (max-width:768px) {
+    .aboutScreen img {
+        max-height: 290px;
+    }
+
+    .aboutShape {
+        padding: 0;
+    }
+    
+    .secPadding {
+        padding: 30px 0px;
+    }
+    
+    .outerShape .circle1 {
+        right: 5px;
+    }
+    
+    .outerShape .circle2 {
+        left: 5px;
+    }
+    
+    .outerShape .circle::after {
+        width: 30px;
+        height: 30px;
+        top: -10px;
+        left: -10px;
+    }
+
+    .aboutus .aboutData {
+        padding-top: 30px;
+    }
+    
+    .secInfo span {
+        font: 400 13px/19px Roboto, Tajawal;
+        padding: 3px 12px;
+    }
+    
+    .secInfo h2 {
+        font: 900 20px/30px Roboto, Tajawal;
+    }
+    
+    .secInfo p {
+        font: 400 13px/23px Roboto, Tajawal;
+    }
+    
+    .dowloadStors {
+        justify-content: space-between;
+    }
+    
+    .downloadStore {
+        padding: 5px 15px;
+        height: auto;
+    }
+    
+    .downloadStore:last-of-type {
+        margin: 0;
+    }
+    
+    .downloadStore h3 {
+        font: Bold 13px/18px Roboto, Tajawal;
+    }
+    
+    .downloadStore img {
+        width: 20px;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .aboutScreen img {
+        max-height: 330px;
+    }
+
+    .aboutShapeBox {
+        position: relative;
+        width: 330px;
+        height: 330px;
+    }
+}
+
 /*==========================||---------------------------||========================*/
 /*==========================||           Features        ||========================*/
 /*==========================||---------------------------||========================*/
@@ -664,6 +906,10 @@ button:focus {
     display: block;
     background: url('../images/dots-grey.png') no-repeat;
     background-size: cover;
+}
+
+.features .row {
+    align-items: center;
 }
 
 .featuresBlock {
@@ -753,6 +999,83 @@ button:focus {
     left: 28%;
 }
 
+@media screen and (max-width:768px) {
+    .featuresScreens {
+        padding: 70px 20px 0 58px;
+    }
+    
+    .featuresScreen1 {
+        transform: rotate(-29deg);
+        margin-top: -48px;
+        margin-right: -75px;
+    }
+    
+    .shape1 {
+        width: 80px;
+        height: 80px;
+        right: 0;
+        top: calc( 50% - 40px );
+    }
+    
+    .shape2 {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .shape3 {
+        width: 102px;
+        height: 112px;
+    }
+    
+    .shape3 img {
+        height: 100%;
+    }
+
+    .features::before {
+        display: none;
+    }
+    
+    .feature {
+        padding-bottom: 5px;
+    }
+
+    .feature h3 {
+        font: 900 13px/21px Roboto, Tajawal;
+    }
+    
+    .feature h6 {
+        font: 400 12px/20px Roboto, Tajawal;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .featuresBlock .row {
+        margin: 0 -5px;
+    }
+
+    .featuresBlock .col-12 {
+        padding: 0 5px;
+    }
+
+    .features::before {
+        display: block;
+        top: calc( 50% - 80px );
+        width: 120px;
+        height: 160px;
+    }
+
+    .feature .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .feature .data {
+        width: calc( 100% - 37px );
+    }
+}
+
+
+
 /*==========================||---------------------------||========================*/
 /*==========================||        App Screens        ||========================*/
 /*==========================||---------------------------||========================*/
@@ -782,6 +1105,27 @@ button:focus {
     transition: all .4s ease-in-out;
 }
 
+@media screen and (max-width:425px) {
+    .owlScreens .owl-item.active.center {
+        transform: scale(1);
+    }
+
+    .owlScreens .owl-item img {
+        max-height: 300px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .secHeader h2 {
+        font: 900 25px/45px Roboto, Tajawal;
+    }
+    
+    .secHeader p {
+        font: 400 13px/24px Roboto, Tajawal;
+    }
+}
+
 /*==========================||---------------------------||========================*/
 /*==========================||        Download App       ||========================*/
 /*==========================||---------------------------||========================*/
@@ -800,7 +1144,7 @@ button:focus {
 }
 
 .downloadWrapper p {
-    font: 300 15px/30px Roboto;
+    font: 300 15px/30px Roboto, Tajawal;
     color: var(--white);
     max-width: 580px;
 }
@@ -832,6 +1176,23 @@ button:focus {
     margin-top: 40px;
 }
 
+@media screen and (max-width:768px) {
+    .downloadWrapper {
+        padding: 30px 0 0 0;
+    }
+    
+    .downloadWrapper h2 {
+        font: Bold 23px/30px Roboto, Tajawal;
+    }
+    
+    .downloadWrapper p {
+        font: 300 13px/23px Roboto, Tajawal;
+    }
+    
+    .downloadWrapper .downloadStore {
+        padding: 10px;
+    }
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||            Counts         ||========================*/
@@ -863,7 +1224,24 @@ button:focus {
     font: 500 21px/33px Roboto, Tajawal;
 }
 
-
+@media screen and (max-width:768px) {
+    .countsBlocks {
+        padding: 0;
+    }
+    
+    .count h4 {
+        font: Bold 20px/25px Roboto, Tajawal;
+        margin: 0;
+    }
+    
+    .count i {
+        font-size: 10px;
+    }
+    
+    .count h3 {
+        font: 500 15px/30px Roboto, Tajawal;
+    }
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||            FOOTER         ||========================*/
@@ -935,11 +1313,109 @@ button:focus {
     transform: translateX(5px);
 }
 
+@media screen and (max-width:768px) {
+    .footer {
+        padding: 20px 0;
+    }
+    
+    .footer .logo {
+        max-width: 100px;
+        margin: auto;
+    }
+    
+    .footerMenu {
+        padding: 10px 0;
+    }
+    
+    .footerMenu a {
+        font-size: 13px;
+        margin: 0 4px;
+    }
+    
+    .social a {
+        width: 25px;
+        height: 25px;
+        font-size: 13px;
+    }
+    
+    .footer p {
+        font-size: 13px;
+        margin: 10px 0 0 0;
+    }
+    
+    .footer p a {
+        font-size: 13px;
+    }    
+}
 
 /*==========================||---------------------------||========================*/
-/*==========================||           Partners        ||========================*/
+/*==========================||              AR           ||========================*/
 /*==========================||---------------------------||========================*/
 
+.ar {
+    direction: rtl;
+    text-align: right;
+}
+
+.ar .navMenu {
+    left: auto;
+    right: 0;
+    transform: translateX(100%);
+}
+
+.ar .navMenu.show {
+    transform: translateX(0);
+}
+
+.ar .owl-carousel {
+    direction: ltr;
+}
+
+.ar .navMenu a::after {
+    left: auto;
+    right: 0;
+}
+
+.ar .header .screen2 {
+    margin-left: 0;
+    margin-right: -50px;
+}
+
+.ar .downloadStore .data {
+    padding: 0 15px 0 0;
+}
+
+.ar .featuresScreens {
+    flex-direction: row-reverse;
+    padding: 40px 60px 0 110px;
+}
+
+.ar .shape1 {
+    right: 0;
+}
+
+.ar .shape3 {
+    left: 10%;
+}
+
+@media screen and (max-width: 767px) {
+    .ar .navMenu a::after {
+        right: -11px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ar .featuresScreen1 {
+        transform: rotate(-38deg);
+        margin-top: -39px;
+        margin-right: -39px;
+        margin-left: -50px;
+    }
+
+    .ar .shape1 {
+        right: 30px;
+    }
+}
 
 
 /*==========================||---------------------------||========================*/

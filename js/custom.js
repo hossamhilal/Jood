@@ -13,14 +13,14 @@
     // OPEN SIDE  MENU 
     $('.menuBtn').on('click', function(){
         $('.navMenu').toggleClass('show');
-        $('.navOverlay').addClass('show');  
+        $('.overlay').addClass('show');  
         setTimeout(function(){
             $('body').addClass('stopScroll');
         }, 200); 
     });
 
     // CLOSE SIDE MENU 
-    $('.navOverlay').on('click', function(){
+    $('.overlay').on('click', function(){
         $(this).removeClass('show');
         $('.navMenu').removeClass('show');  
         $('body').removeClass('stopScroll');  
@@ -64,7 +64,7 @@
         navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             600: {
                 items: 3
