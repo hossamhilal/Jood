@@ -91,6 +91,36 @@
         }
     });
 
+    $('.field input').focus(function(){
+        $(this).parent('.field').addClass('focused');
+    });
+
+    $('.field input').each(function() { 
+        if ($(this).val() != "") {
+            $(this).parent('.field').addClass('focused');   
+        }
+    });
+
+    $('.field input').focusout(function(){
+        if($(this).val() === "")
+        $(this).parent('.field').removeClass('focused');
+    });
+
+    $('.field textarea').focus(function(){
+        $(this).parent('.field').addClass('focused');
+    });
+
+    $('.field textarea').each(function() { 
+        if ($(this).val() != "") {
+            $(this).parent('.field').addClass('focused');   
+        }
+    });
+
+    $('.field textarea').focusout(function(){
+        if($(this).val() === "")
+        $(this).parent('.field').removeClass('focused');
+    });
+
     // COUNTER
     var a = 0;
     function count () {

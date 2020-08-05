@@ -88,75 +88,47 @@
     font-display: swap;
 }
 
+/* Light */
 @font-face {
-    font-family: Tajawal;
-    src: url('../fonts/Tajawal-Light.eot');
-    src: url('../fonts/Tajawal-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Tajawal-Light.woff2') format('woff2'),
-        url('../fonts/Tajawal-Light.woff') format('woff'),
-        url('../fonts/Tajawal-Light.ttf') format('truetype'),
-        url('../fonts/Tajawal-Light.svg#Tajawal-Light') format('svg');
-    font-weight: 300;
+    font-family: JFFlat ;
+    src: url('../fonts/JF-Flat-light.eot');
+    src: url('../fonts/JF-Flat-light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/JF-Flat-light.svg#JF Flat Light') format('svg'),
+    url('../fonts/JF-Flat-light.woff') format('woff'),
+    url('../fonts/JF-Flat-light.ttf') format('truetype');
+    font-weight: 300 ;
     font-style: normal;
-    font-display: swap;
 }
 
+/* Regular */
 @font-face {
-    font-family: Tajawal;
-    src: url('../fonts/Tajawal-Regular.eot');
-    src: url('../fonts/Tajawal-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Tajawal-Regular.woff2') format('woff2'),
-        url('../fonts/Tajawal-Regular.woff') format('woff'),
-        url('../fonts/Tajawal-Regular.ttf') format('truetype'),
-        url('../fonts/Tajawal-Regular.svg#Tajawal-Regular') format('svg');
+    font-family: JFFlat;
+    src: url('../fonts/JF-Flat-regular.eot');
+    src: url('../fonts/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+    url('../fonts/JF-Flat-regular.woff') format('woff'),
+    url('../fonts/JF-Flat-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
+/* Medium */
 @font-face {
-    font-family: Tajawal;
-    src: url('../fonts/Tajawal-Medium.eot');
-    src: url('../fonts/Tajawal-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Tajawal-Medium.woff2') format('woff2'),
-        url('../fonts/Tajawal-Medium.woff') format('woff'),
-        url('../fonts/Tajawal-Medium.ttf') format('truetype'),
-        url('../fonts/Tajawal-Medium.svg#Tajawal-Medium') format('svg');
-    font-weight: 500;
+    font-family: JFFlat;
+    src: url('../fonts/JF-Flat-medium.eot');
+    src: url('../fonts/JF-Flat-medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/JF-Flat-medium.svg#JF Flat Medium') format('svg'),
+    url('../fonts/JF-Flat-medium.woff') format('woff'),
+    url('../fonts/JF-Flat-medium.ttf') format('truetype');
+    font-weight: 600;
     font-style: normal;
-    font-display: swap;
 }
 
-@font-face {
-    font-family: Tajawal;
-    src: url('../fonts/Tajawal-Bold.eot');
-    src: url('../fonts/Tajawal-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Tajawal-Bold.woff2') format('woff2'),
-        url('../fonts/Tajawal-Bold.woff') format('woff'),
-        url('../fonts/Tajawal-Bold.ttf') format('truetype'),
-        url('../fonts/Tajawal-Bold.svg#Tajawal-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: Tajawal;
-    src: url('../fonts/Tajawal-Black.eot');
-    src: url('../fonts/Tajawal-Black.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Tajawal-Black.woff2') format('woff2'),
-        url('../fonts/Tajawal-Black.woff') format('woff'),
-        url('../fonts/Tajawal-Black.ttf') format('truetype'),
-        url('../fonts/Tajawal-Black.svg#Tajawal-Black') format('svg');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
 
 
 /**** Init ****/
 body {
-    font-family: Roboto, Tajawal;
+    font-family: Roboto, JFFlat;
     overflow-x: hidden;
     direction: ltr;
     text-align: left;
@@ -299,7 +271,7 @@ button:focus {
 
 .header {
     padding: 40px 0;
-    font: 500 14px/24px Roboto, Tajawal;
+    font: 500 14px/24px Roboto, JFFlat;
     overflow: hidden;
 }
 
@@ -650,18 +622,18 @@ button:focus {
     background: var(--secondColor);
     color: var(--mainColor);
     padding: 6px 12px;
-    font: 400 14px/19px Roboto, Tajawal;
+    font: 400 14px/19px Roboto, JFFlat;
     margin-bottom: 14px;
     display: inline-block;
 }
 
 .secInfo h2 {
-    font: 900 37px/53px Roboto, Tajawal;
+    font: 900 37px/53px Roboto, JFFlat;
     color: var(--textDark);
 }
 
 .secInfo p {
-    font: 400 14px/25px Roboto, Tajawal;
+    font: 400 14px/25px Roboto, JFFlat;
 }
 
 .dowloadStors {
@@ -689,13 +661,13 @@ button:focus {
 }
 
 .downloadStore h5 {
-    font: 400 12px/26px Roboto, Tajawal;
+    font: 400 12px/26px Roboto, JFFlat;
     color: var(--textMedium);
     margin: 0;
 }
 
 .downloadStore h3 {
-    font: Bold 17px/25px Roboto, Tajawal;
+    font: Bold 17px/25px Roboto, JFFlat;
     margin: 0;
     color: var(--textDark);
 }
@@ -844,16 +816,16 @@ button:focus {
     }
 
     .secInfo span {
-        font: 400 13px/19px Roboto, Tajawal;
+        font: 400 13px/19px Roboto, JFFlat;
         padding: 3px 12px;
     }
 
     .secInfo h2 {
-        font: 900 20px/30px Roboto, Tajawal;
+        font: 900 20px/30px Roboto, JFFlat;
     }
 
     .secInfo p {
-        font: 400 13px/23px Roboto, Tajawal;
+        font: 400 13px/23px Roboto, JFFlat;
     }
 
     .dowloadStors {
@@ -870,7 +842,7 @@ button:focus {
     }
 
     .downloadStore h3 {
-        font: Bold 13px/18px Roboto, Tajawal;
+        font: Bold 13px/18px Roboto, JFFlat;
     }
 
     .downloadStore img {
@@ -941,12 +913,12 @@ button:focus {
 }
 
 .feature h3 {
-    font: 900 14px/26px Roboto, Tajawal;
+    font: 900 14px/26px Roboto, JFFlat;
     margin: 0;
 }
 
 .feature h6 {
-    font: 400 13px/20px Roboto, Tajawal;
+    font: 400 13px/20px Roboto, JFFlat;
     color: var(--text);
 }
 
@@ -1042,11 +1014,11 @@ button:focus {
     }
 
     .feature h3 {
-        font: 900 13px/21px Roboto, Tajawal;
+        font: 900 13px/21px Roboto, JFFlat;
     }
 
     .feature h6 {
-        font: 400 12px/20px Roboto, Tajawal;
+        font: 400 12px/20px Roboto, JFFlat;
     }
 }
 
@@ -1089,13 +1061,13 @@ button:focus {
 }
 
 .secHeader h2 {
-    font: 900 40px/53px Roboto, Tajawal;
+    font: 900 40px/53px Roboto, JFFlat;
     letter-spacing: 0.8px;
     color: var(--textDark);
 }
 
 .secHeader p {
-    font: 400 15px/24px Roboto, Tajawal;
+    font: 400 15px/24px Roboto, JFFlat;
 }
 
 .owlScreens .owl-stage {
@@ -1120,11 +1092,11 @@ button:focus {
 
 @media screen and (max-width:768px) {
     .secHeader h2 {
-        font: 900 25px/45px Roboto, Tajawal;
+        font: 900 25px/45px Roboto, JFFlat;
     }
 
     .secHeader p {
-        font: 400 13px/24px Roboto, Tajawal;
+        font: 400 13px/24px Roboto, JFFlat;
     }
 }
 
@@ -1140,13 +1112,13 @@ button:focus {
 }
 
 .downloadWrapper h2 {
-    font: Bold 43px/60px Roboto, Tajawal;
+    font: Bold 43px/60px Roboto, JFFlat;
     letter-spacing: 1px;
     color: var(--white);
 }
 
 .downloadWrapper p {
-    font: 300 15px/30px Roboto, Tajawal;
+    font: 300 15px/30px Roboto, JFFlat;
     color: var(--white);
     max-width: 580px;
 }
@@ -1184,11 +1156,11 @@ button:focus {
     }
 
     .downloadWrapper h2 {
-        font: Bold 23px/30px Roboto, Tajawal;
+        font: Bold 23px/30px Roboto, JFFlat;
     }
 
     .downloadWrapper p {
-        font: 300 13px/23px Roboto, Tajawal;
+        font: 300 13px/23px Roboto, JFFlat;
     }
 
     .downloadWrapper .downloadStore {
@@ -1211,7 +1183,7 @@ button:focus {
 }
 
 .count h4 {
-    font: Bold 35px/45px Roboto, Tajawal;
+    font: Bold 35px/45px Roboto, JFFlat;
     letter-spacing: 0px;
     color: var(--mainColor);
 }
@@ -1223,7 +1195,7 @@ button:focus {
 }
 
 .count h3 {
-    font: 500 21px/33px Roboto, Tajawal;
+    font: 500 21px/33px Roboto, JFFlat;
 }
 
 @media screen and (max-width:768px) {
@@ -1232,7 +1204,7 @@ button:focus {
     }
 
     .count h4 {
-        font: Bold 20px/25px Roboto, Tajawal;
+        font: Bold 20px/25px Roboto, JFFlat;
         margin: 0;
     }
 
@@ -1241,7 +1213,7 @@ button:focus {
     }
 
     .count h3 {
-        font: 500 15px/30px Roboto, Tajawal;
+        font: 500 15px/30px Roboto, JFFlat;
     }
 }
 
@@ -1266,7 +1238,7 @@ button:focus {
 }
 
 .footerMenu a {
-    font: 400 16px/24px Roboto, Tajawal;
+    font: 400 16px/24px Roboto, JFFlat;
     color: inherit;
     margin: 0 15px;
     transition: all .3s ease-in-out;
@@ -1297,7 +1269,7 @@ button:focus {
 
 .footer p {
     color: var(--white);
-    font: 400 16px/24px Roboto, Tajawal;
+    font: 400 16px/24px Roboto, JFFlat;
     margin: 20px 0 0 0;
 }
 
@@ -1350,6 +1322,91 @@ button:focus {
     }
 }
 
+
+/*==========================||---------------------------||========================*/
+/*==========================||           Contact         ||========================*/
+/*==========================||---------------------------||========================*/
+
+.contactForm .col-12 {
+    margin-bottom: 10px;
+}
+
+.field {
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 20px;
+    height: 50px;
+    position: relative;
+}
+
+.field::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 0;
+    background: var(--mainColor);
+    display: block;
+    height: 1px;
+    border-radius: 5px;
+}
+
+.field.focused::after {
+    width: calc(100% - 10px);
+    transition: all .5s ease-in-out;
+}
+
+
+.field input {
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    background-color: var(--white);
+    height: 50px;
+    line-height: 48px;
+    padding: 0px 15px;
+    width: 100%;
+}
+
+.textareaField {
+    height: 140px;
+}
+
+.textareaField textarea {
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    background-color: var(--white);
+    width: 100%;
+    padding: 15px;
+    height: 140px;
+    resize: none;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+    color: var(--text);
+}
+
+.field input:focus::placeholder,
+.field textarea:focus::placeholder {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.submitForm {
+    width: 170px;
+    height: 50px;
+    border: 0;
+    margin: 10px auto 0;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 767px) {
+    .contactForm .col-12 {
+        margin-bottom: 0;
+    }
+}
+
 /*==========================||---------------------------||========================*/
 /*==========================||              AR           ||========================*/
 /*==========================||---------------------------||========================*/
@@ -1357,12 +1414,6 @@ button:focus {
 .ar {
     direction: rtl;
     text-align: right;
-}
-
-.ar .navMenu {
-    left: auto;
-    right: 0;
-    transform: translateX(100%);
 }
 
 .ar .navMenu.show {
@@ -1400,9 +1451,20 @@ button:focus {
     left: 10%;
 }
 
+.ar .field::after {
+    left: auto;
+    right:5px;
+}
+
 @media screen and (max-width: 767px) {
     .ar .navMenu a::after {
         right: -11px;
+    }
+
+    .ar .navMenu {
+        left: auto;
+        right: 0;
+        transform: translateX(100%);
     }
 }
 
